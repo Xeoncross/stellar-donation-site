@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Donation Tracker</title>
+  <link rel="stylesheet" href="/payments/style.css">
+</head>
+
+<body class="dark">
+  <main role="main">
+    <div class="container">
+
+      <div class="public_key"></div>
+
+      <canvas id="qr" width="300px" height="300px"></canvas>
+
+      <div class="donation">
+        <h1>Stellar Lumens Raised</h1>
+        <div class="bar">
+          <div class="rounded">
+            <span class="goal"></span>
+            <div class="progress" style="width: 0;"><span class="raised"></span></div>
+          </div>
+        </div>
+      </div>
+
+      <article></article>
+    </div>
+  </main>
+</body>
+</html>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/stellar-sdk/0.8.0/stellar-sdk.js'></script>
+<script  src="/payments/dist/main.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114718642-1"></script>
+<script>
+(function () {
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114718642-1');
+}());
+</script>
+
+
+</body>
+</html>
